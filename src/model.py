@@ -33,3 +33,6 @@ class PPO(nn.Module):
         x = F.relu(self.conv4(x))
         x = self.linear(x.view(x.size(0), -1))
         return self.actor_linear(x), self.critic_linear(x)
+
+
+# mytet
